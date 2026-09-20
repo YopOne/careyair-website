@@ -1,0 +1,65 @@
+<?php
+$mydomain = $_SERVER["HTTP_HOST"];
+$thisyear = date("Y");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carey Air</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="designer" content="Red Hot Web Design | www.redhotwebdesign.com" />
+<link rel="stylesheet" href="css/redhotholding.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <header id="logo">
+      <div class="col-md-12 col-sm-12"> <h1>CareyAir</h1> </div>
+    </header>
+    <section id="marketing-text">
+      <div class="col-md-12 col-sm-12">
+        <h2><?= $mydomain ?></h2>
+        <p>Coming Soon...</p>
+      </div>
+      <div class="col-md-12 col-sm-12">
+        <div><p>-</p></div>
+        <h4>Stay tuned, this website will be launching soon...</h4>
+      </div>
+    </section>
+<!--    <section id="features">
+      <div class="col-md-3 col-sm-3">
+        <div class="feature-box"> <i class="fa fa-cloud"></i>
+          <h2>Cloud Hosting</h2>
+          <p>Lightning Fast Hosting that's Secure, Reliable & Scalable so it grows with your business.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <div class="feature-box"> <i class="fa fa-desktop"></i>
+          <h2>Control Panel</h2>
+          <p>Take control of your hosting features &amp; settings with your own industry standard control panel.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <div class="feature-box"> <i class="fa fa-envelope"></i>
+          <h2>Professional Email</h2>
+          <p>Professional email branded with your own domain name that shows the world you're in business.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <div class="feature-box"> <i class="fa fa-wordpress"></i>
+          <h2>100+ Popular Apps</h2>
+          <p>One-click install available for over 100 of the most popular web apps including WordPress.</p>
+        </div>
+      </div>
+    </section>-->
+    <footer>
+      <div class="col-md-12 col-sm-12">
+        <small>&copy; <?= $thisyear ?> Carey Air - All rights reserved</small> </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Host:		careyair.com
+IP:		91.210.232.30
+Server:	ftp.careyair.com
+Port: 		21
+Username:	damo@careyair.com
+Password:	L%UyN%ny.]+SN*=Z

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareyAir LLC | Precision Aircraft Construction</title>
+    <!-- Adding Google Fonts for a chic look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span class="icon">✈</span> CareyAir LLC
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#enroll" class="enroll-link">Sign Up for a Class</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Award Winning Builder Assistance</h1>
+                <p>Expert consulting and hands-on instruction for builders of Vans Aircraft. Classes in sheet metal and riveting, electrical and wiring, fiberglass and finishing.</p>
+                <button id="consult-btn" class="primary-btn">Request a Free Consultation</button>
+            </div>
+            
+            <div class="hero-image">
+                <img src="my-rv10.jpg" alt="Vans RV-10 N415JS">
+            </div>
+        </section>
+
+        <section id="services" class="section-container">
+            <h2>Class Offerings</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-icon">🔩</div>
+                    <h3>Sheet Metal & Riveting</h3>
+                    <p>Expert guidance on structural integrity, flush riveting techniques, skin fitting, and corrosion prevention for aluminum airframes.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Electrical Systems</h3>
+                    <p>Custom wiring diagrams, load analysis, and harness fabrication to ensure safe, redundant, and reliable power distribution.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📡</div>
+                    <h3>Fiberglass and Finishing</h3>
+                    <p>Panel design, component selection, and integration of glass cockpits, radios, and autopilot systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="enroll" class="section-container bg-light enrollment">
+            <h2>Class Enrollment</h2>
+            <p>Click the button below to view availability and reserve your spot for hands-on builder assistance.</p>
+            
+            <div class="calendar-container">
+                <!-- Google Calendar Appointment Scheduling begin -->
+                <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                <script>
+                (function() {
+                  var target = document.currentScript;
+                  window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1pwkKsfOtT916uXTy-SDo5Lqt60Jr5kaKHygnAZWaYBUdVR0e4uzzixG7FeojppYsNaswsD07x?gv=true',
+                      color: '#c2a661', /* Updated to match new Gold accent */
+                      label: 'Book an appointment',
+                      target,
+                    });
+                  });
+                })();
+                </script>
+                <!-- end Google Calendar Appointment Scheduling -->
+            </div>
+        </section>
+
+        <section id="contact" class="section-container">
+            <h2>Let's Talk About Your Build</h2>
+            <form id="contact-form" class="contact-form" action="send-email.php" method="POST">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <select name="project-type" id="project-type" required>
+                    <option value="">Select Area of Assistance...</option>
+                    <option value="sheet-metal">Sheet Metal / Structural</option>
+                    <option value="electrical">Electrical Wiring</option>
+                    <option value="avionics">Avionics Panel</option>
+                    <option value="general">General Build Consulting</option>
+                </select>
+                <textarea name="message" id="message" rows="4" placeholder="Tell us about your aircraft project..." required></textarea>
+                <button type="submit" class="primary-btn">Send Message</button>
+            </form>
+            <div id="form-feedback" class="feedback-msg hidden"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
